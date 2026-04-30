@@ -832,7 +832,15 @@ button:hover{
     align-items: center;
     text-align: center;
   }
-
+.footer-links p{
+  justify-content: center;
+  
+}
+.footer-left p{
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
   .footer-left h2 {
     justify-content: center;
   }
