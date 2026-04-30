@@ -506,26 +506,30 @@
 
 /* ===== CTA SECTION ===== */
 .cta {
-  padding: 10px 10px;
-  margin-top: -0px;
-  
-  background: #020617
+  padding: 20px;
+  background: #020617;
 }
 
+/* CARD */
 .cta-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
-  padding: 15px 30px;
+  padding: 20px 30px;
   border-radius: 20px;
 
   background: linear-gradient(135deg, #0f172a, #1e293b);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 
-  border: 1px solid rgba(2, 5, 24, 0.103);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  max-width: 1100px;
+  margin: auto;
 }
 
+/* LEFT */
 .cta-left {
   display: flex;
   align-items: center;
@@ -533,19 +537,15 @@
 }
 
 .cta-icon {
-  font-size: 50px;
+  font-size: 45px;
   color: #38bdf8;
- /* background: rgba(56, 189, 248, 0.1);*/
-  padding: 10px;
-  border-radius: 50%;
-  
 }
 
 .cta-left h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: white;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .cta-left p {
@@ -553,22 +553,23 @@
   color: #cbd5e1;
 }
 
+/* RIGHT BUTTON */
 .cta-right button {
   background: linear-gradient(90deg, #ff6a00, #ff8c00);
   color: white;
   border: none;
-  padding: 12px 28px;
+  padding: 12px 26px;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .cta-right button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 106, 0, 0.4);
 }
-
 
 
 /* ===== FOOTER ===== */
@@ -798,10 +799,23 @@ button:hover{
   }
 
   /* CTA */
-  .cta-content {
+   .cta-content {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    padding: 25px 20px;
+  }
+
+  .cta-left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-right {
+    width: 100%;
+  }
+
+  .cta-right button {
+    width: 100%;
   }
 
   /* FOOTER */
