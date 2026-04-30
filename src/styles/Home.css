@@ -576,7 +576,7 @@
 .footer {
   background: #020617;
   color: #cbd5e1;
-  padding: 30px 80px 20px;
+  padding: 30px 40px 20px;
 }
 
 .footer-content {
@@ -584,6 +584,8 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   align-items: flex-start;
   gap: 30px;
+   max-width: 1100px;   
+  margin: auto;
 }
 
 /* LEFT */
@@ -651,6 +653,7 @@
 .contact-item span{
   white-space: nowrap;
   line-height: 1.5;
+  word-break: break-word;
 }
 
 /* BOTTOM */
@@ -824,12 +827,23 @@ button:hover{
     text-align: center;
   }
 
-  .footer {
-    padding: 20px;
+  .footer-left,
+  .footer-links {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left h2 {
+    justify-content: center;
+  }
+
+  .social-icons span {
+    margin: 0 6px;
   }
 
   .footer-bottom {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     text-align: center;
   }
