@@ -1,6 +1,12 @@
+ 
 
+ body{
+  
+  overflow-x: hidden;
+}
+ 
 .home{
-    min-width: 100vh;
+    min-width: 100%;
     display:flex;
     justify-content: space-between;
     
@@ -732,105 +738,110 @@ button:hover{
   }
 
 }
-/*mobile view*/
 
-/*HOME*/
+   /* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
+  /* HOME SECTION */
   .home {
     flex-direction: column;
+    padding: 20px;
     text-align: center;
-    padding: 40px 20px;
   }
 
   .home-left {
+    max-width: 100%;
     align-items: center;
   }
 
   .home-left h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    text-align: center;
   }
 
   .home-desc {
-    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .home-right {
+    margin-top: 20px;
   }
 
   .home-right img {
     max-width: 300px;
-    margin-top: 20px;
+    width: 100%;
+    transform: none;
   }
-}
-  /*SERVICE SECTION*/
-  @media (max-width: 768px) {
+
+  /* SERVICES */
   .services {
     flex-direction: column;
     align-items: center;
   }
 
   .card {
-    width: 100%;
+    width: 90%;
   }
 
-  .modal-content {
+  /* ABOUT SECTION */
+  .about-section {
+    flex-direction: column;
     padding: 20px;
   }
 
-   .modal-content h2 {
-    font-size: 20px;
-  }
-
-  .modal-content ul li {
-    font-size: 14px;
-  }
-    .modal-btn {
-    width: 100%;
-  }
-}
-
-/*ABOUT*/
-@media (max-width: 768px) {
-  .about-box {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .about-left img {
-    width: 100%;
-    max-width: 300px;
+    height: auto;
   }
 
-  .about-right {
+  .about-right h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about-right p {
     text-align: center;
   }
 
   .about-stats {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
   }
-}
 
-/*CTA*/
-@media (max-width: 768px) {
+  /* CTA */
   .cta-content {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
   }
 
-  .cta-left {
-    justify-content: center;
-  }
-}
-
-/*FOOTER*/
-@media (max-width: 768px) {
+  /* FOOTER */
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .footer-left p {
-    margin: auto;
+  .footer {
+    padding: 20px;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+   
+
+
+/*
 
   .footer-links {
     align-items: center;
