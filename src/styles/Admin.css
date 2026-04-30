@@ -1,0 +1,237 @@
+.admin-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin:40px auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+/* TITLE */
+.admin-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #f59e0b;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+}
+
+.controls h2 {
+  color: #38bdf8;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h3 {
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.contact-card span {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.delete-btn {
+  margin-top: 15px;
+  background: #ef4444;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* LOGOUT 
+.logout-btn {
+ 
+  background: #f59e0b;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #d97706;
+}  */  
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+/* LOADING */
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  color: #38bdf8;
+}
+
+.admin-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  
+}
+.header-right{
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn{
+  background: #f59e0b;
+  border:none;
+  padding:8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  width: auto;
+  transition: 0.3s;
+  display: inline-block;
+}
+.logout-btn:hover{
+  background:#d97706;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* 📱 MOBILE (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .admin-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  /* HEADER */
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .admin-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CONTROLS */
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls input,
+  .controls select {
+    width: 100%;
+  }
+
+  .controls h2 {
+    font-size: 1rem;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CARD */
+  .contact-card {
+    padding: 15px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* TABLET (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .admin-title {
+    font-size: 2rem;
+  }
+}
