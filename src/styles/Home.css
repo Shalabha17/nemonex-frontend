@@ -670,6 +670,18 @@
   color: #f97316;
 }
 
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f97316;
+}
+
 .contact-item{
   display: flex;
   align-items: flex-start;
