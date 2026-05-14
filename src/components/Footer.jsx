@@ -22,18 +22,18 @@ function Footer(){
     {/* QUICK LINKS */}
     <div className="footer-links">
       <h4>Quick Links</h4>
-      <p>Home</p>
-      <p>About Us</p>
-      <p>Services</p>
-      <p>Contact</p>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </div>
 
     {/* SERVICES */}
     <div className="footer-links">
       <h4>Services</h4>
-      <p>Software Developement</p>
-      <p>Hardware Projects</p>
-      <p>Digital Marketing</p>
+       <a href="#software">Software Development</a>
+       <a href="#hardware">Hardware Projects</a>
+       <a href="#marketing">Digital Marketing</a>
         
       
     </div>
