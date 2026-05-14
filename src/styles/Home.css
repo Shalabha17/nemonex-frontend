@@ -625,12 +625,25 @@
 /* SOCIAL ICONS */
 .social-icons span {
   margin-right: 12px;
-  background: #0f172a;
   padding: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
   border-radius: 50%;
   cursor: pointer;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  flex-direction: row;
+}
 /* LINKS */
 .footer-links h4 {
   color: white;
@@ -863,6 +876,7 @@ button:hover{
     align-items: center;
     gap:10px;
     flex-wrap: wrap;
+    
 
   }
 
