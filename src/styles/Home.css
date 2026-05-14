@@ -573,10 +573,22 @@
 
 
 /* ===== FOOTER ===== */
+.footer h2,
+.footer h4 {
+  color: white;
+}
+
+.footer p,
+.footer a,
+.footer span {
+  color: #cbd5e1;
+  text-decoration: none;
+}
 .footer {
   background: #020617;
   color: #cbd5e1;
   padding: 30px 40px 20px;
+  width: 100%;
 }
 
 .footer-content {
