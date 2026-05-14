@@ -24,7 +24,7 @@
       </span>
     </div>
 
-    <div className="card" id="software" data-aos="zoom-in">
+    <div className="card" id="hardware" data-aos="zoom-in">
       <div className="icon blue">⚙️</div>
       <h3>Hardware Projects</h3>
       <p>Innovative embedded systems and IoT solutions.</p>
@@ -33,7 +33,7 @@
       </span>
     </div>
 
-    <div className="card"  id="software" data-aos="zoom-in">
+    <div className="card"  id="marketing" data-aos="zoom-in">
       <div className="icon green">📈</div>
       <h3>Digital Marketing</h3>
       <p>Grow your business with SEO and social media strategies.</p>
