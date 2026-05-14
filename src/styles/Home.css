@@ -625,7 +625,7 @@
 /* SOCIAL ICONS */
 .social-icons span {
   margin-right: 12px;
-  padding: 10px;
+  padding: 5px;
   width: 45px;
   height: 45px;
   display: flex;
@@ -874,7 +874,7 @@ button:hover{
     justify-content: center;
     display:flex;
     align-items: center;
-    gap:10px;
+    gap:5px;
     flex-wrap: wrap;
     
 
