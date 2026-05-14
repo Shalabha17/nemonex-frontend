@@ -573,7 +573,7 @@
 
 
 /* ===== FOOTER ===== */
-.footer h2
+
 .footer h4 {
   color: white;
 }
@@ -613,7 +613,7 @@
 }
 
 .logo-n {
-  color: #f97316;
+  color: #f97316 !important;
 }
 
 .footer-left p {
@@ -858,7 +858,12 @@ button:hover{
   }
 
   .social-icons span {
-    margin: 0 6px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+
   }
 
   .footer-bottom {
