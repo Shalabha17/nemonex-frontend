@@ -682,6 +682,10 @@
   color: #f97316;
 }
 
+#software,#hardware,#marketing{
+  scroll-margin-top: 100px;
+}
+
 .contact-item{
   display: flex;
   align-items: flex-start;
